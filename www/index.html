@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover">
+      <title>statusbar test</title>
+      </head>
+  <body style="height:100%;margin:0px;padding:0px;width:100%;">
+    <div style="background-color:red;height:45px;position:absolute;top:0">AAA</div>
+    <div style="background-color:red;height:45px;position:absolute;top:0;right:0;">BBB</div>
+    <div class="app" style="margin:80px">
+      <input type="button" onclick="StatusBar.hide();" value="hide"/>
+      <input type="button" onclick="StatusBar.show();" value="show"/>
+      <input type="button" onclick="StatusBar.overlaysWebView(true);" value="overlay"/>
+      <input type="button" onclick="StatusBar.overlaysWebView(false);" value="don't overlay"/>
+      <input type="button" onclick="StatusBar.backgroundColorByName('blue');" value="blue"/>
+    </div>
+    <div style="background-color:red;height:45px;position:absolute;bottom:0">YYY</div>
+    <div style="background-color:red;height:45px;position:absolute;bottom:0;right:0;">ZZZ</div>
+    <script type="text/javascript" src="cordova.js"></script>
+  </body>
+</html>
